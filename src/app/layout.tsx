@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Junno',
-  description: 'A nova forma de reservar ou agendar sua hora de beleza.',
+  description: 'Uma nova forma de reservar ou agendar sua hora de beleza.',
   icons: {
     icon: [
       {
@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={`${inter.className} dark:bg-zinc-900`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
           storageKey={STORAGE_KEYS.JUNNO_THEME}

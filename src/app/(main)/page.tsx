@@ -1,6 +1,9 @@
+import { Hero } from './_components/hero'
+
 export default function Main() {
   return (
     <div className="flex min-h-full w-full flex-col items-center">
+      <Hero />
       <div
         className="flex w-full max-w-8xl flex-1 flex-col items-center justify-center gap-y-8
          md:justify-start"

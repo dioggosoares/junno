@@ -10,7 +10,7 @@ export default function MainLayout({
   return (
     <div className="h-full dark:bg-zinc-900">
       <Header />
-      <div className="h-full pt-[5.3125rem]">{children}</div>
+      <div className="h-full">{children}</div>
     </div>
   )
 }
