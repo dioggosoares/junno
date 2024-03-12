@@ -8,9 +8,12 @@ export default function MainLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className="h-full dark:bg-zinc-900">
-      <Header />
-      <div className="h-full">{children}</div>
+    <div className="flex h-full flex-col dark:bg-zinc-900">
+      <div className="mx-auto flex w-full flex-1 justify-center">
+        <Header />
+        <div className="flex w-full">{children}</div>
+      </div>
+      <footer className="mt-auto">footer</footer>
     </div>
   )
 }

@@ -1,13 +1,18 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Ubuntu } from 'next/font/google'
 import { Toaster } from 'sonner'
 
 import { STORAGE_KEYS } from '@/constants/general'
 import { ThemeProvider } from '@/providers/theme-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-ubuntu',
+})
 
 export const metadata: Metadata = {
   title: 'Junno',
@@ -35,7 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" className="antialiased" suppressHydrationWarning>
-      <body className={`${inter.className} dark:bg-zinc-900`}>
+      <body
+        className={`${inter.variable} ${ubuntu.variable} font-sans dark:bg-zinc-900`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

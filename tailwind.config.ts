@@ -53,8 +53,16 @@ const config = {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
+      screens: {
+        '2xl': '90rem',
+        '3xl': '96rem',
+      },
       maxWidth: {
         '8xl': '90rem',
+      },
+      fontFamily: {
+        sans: 'var(--font-inter)',
+        alt: 'var(--font-ubuntu)',
       },
       borderRadius: {
         lg: 'var(--radius)',
